@@ -11,6 +11,6 @@ setup(
         author_email='edeleon4@mit.edu',
         license='MIT',
         packages=['paop'],
-        scripts=[],
+        scripts=['bin/paop'],
         test_suite='tests'
 )
