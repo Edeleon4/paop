@@ -5,7 +5,7 @@ from sklearn import svm
 from models.data import Data
 from models.abstract_model import AbstractModel
 from loaders.findings_svm_loaders import BOWs_Loader, AVG_Embeds_Loader
-
+#TODO move from json to pickle
 class AbstractSVM(AbstractModel):
     name = "SVM"
     #__init__ properties data
