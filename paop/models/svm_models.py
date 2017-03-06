@@ -2,9 +2,8 @@ import numpy as np
 from random import shuffle
 import json
 from sklearn import svm
-from models.data import Data
-from models.abstract_model import AbstractModel
-from loaders.findings_svm_loaders import BOWs_Loader, AVG_Embeds_Loader
+from paop.models.data import Data
+from paop.models.abstract_model import AbstractModel
 #TODO move from json to pickle
 class AbstractSVM(AbstractModel):
     name = "SVM"
