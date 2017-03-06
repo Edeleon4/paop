@@ -8,7 +8,7 @@ from paop.models.data import Data
             summary: Returns summary data about the model
             save(path): Store the model at the given path
 
-            stati:
+            static:
                 load
 """
 class AbstractModel():
