@@ -8,8 +8,8 @@ from paop.models.abstract_model import AbstractModel
 class AbstractSVM(AbstractModel):
     name = "SVM"
     #__init__ properties data
-    def setup(self):
-        self.model = svm.SVC()
+    def _get_model(self):
+        return svm.SVC()
 
     def train(self):
         print(len(self.data.train_x))
@@ -26,7 +26,7 @@ class SVM(AbstractSVM):
     def __init__(self, train_path, dev_path, test_path, debug=False) :
         super().__init__(train_path, dev_path, test_path, debug)
 
-    def get_data(self, train_path, dev_path, test_path):
+    def _get_data(self, train_path, dev_path, test_path):
         train_x = None
         train_y = None
         dev_x = None

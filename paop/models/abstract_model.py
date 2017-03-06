@@ -1,5 +1,5 @@
 print('abs model loaded')
-from models.data import Data
+from paop.models.data import Data
 """
     Model interface base
         Exposed API:
@@ -20,7 +20,7 @@ class AbstractModel():
                  debug=False):
         self.debug = debug
         self.data, self.props = self._get_data(train_path, dev_path, test_path)
-        self.model = get_model()
+        self.model = self._get_model()
 
     def train(self):
         raise NotImplementedError()
@@ -37,6 +37,6 @@ class AbstractModel():
     def _get_data(self, train_path, dev_path, test_path):
         raise NotImplementedError()
 
-    def get_model(self):
+    def _get_model(self):
         raise NotImplementedError()
 
