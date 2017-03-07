@@ -14,7 +14,7 @@ class TestSVM(unittest.TestCase):
         dmy_data = "tests/dmy_data.json"
         svm = paop.SVM(dmy_data, dmy_data, dmy_data)
         svm.train()
-        score_out = model.evaluate()
+        score_out = svm.evaluate()
         self.assertTrue(score_out > .9)
 
 
