@@ -5,3 +5,7 @@ build/
 dist/
 docs/_build/
 venv/
+.coverage
+paop/introdeeplearning/
+paop/models/old_abstract_model.py
+
