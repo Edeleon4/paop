@@ -1,6 +1,5 @@
 language: python
 python: "3.6"
-before_install: "pip install codecov"
-install: "pip install ."
+install: "pip install codecov"
 script: "coverage run --source=paop/ setup.py test"
 after_success: "codecov"
