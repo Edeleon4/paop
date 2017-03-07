@@ -7,11 +7,10 @@ python:
           - 3.6
 
 install:
-          - pip install codecov
+          - pip install --user codecov
 
 script:
           - coverage run --source=paop/ setup.py test 
 
 after_success:
-          - codecov
-
+          - codecov 
