@@ -7,9 +7,9 @@ install:
         - pip install sklearn
         - pip install scipy
         - pip install keras
-        - pip install pickle
-        - pip install json
+
 script: 
         - coverage run --source=paop/ setup.py test
+
 after_success: 
         - codecov
