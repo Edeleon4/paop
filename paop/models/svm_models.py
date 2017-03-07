@@ -5,7 +5,6 @@ from sklearn import svm
 from paop.models.data import Data
 from paop.models.abstract_model import AbstractModel
 #TODO move from json to pickle
-
 class AbstractSVM(AbstractModel):
     name = "SVM"
     #__init__ properties data
