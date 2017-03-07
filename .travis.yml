@@ -5,6 +5,7 @@ python:
 install: 
         - pip install codecov
         - pip install sklearn
+        - pip install scipy
 script: 
         - coverage run --source=paop/ setup.py test
 after_success: 
