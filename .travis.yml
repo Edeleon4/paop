@@ -1,5 +1,11 @@
-language: python
-python: "3.6"
-install: "pip install codecov"
-script: "coverage run --source=paop/ setup.py test"
-after_success: "codecov"
+language: 
+        - python
+python: 
+        - 3.6
+install: 
+        - pip install codecov
+        - pip install sklearn
+script: 
+        - coverage run --source=paop/ setup.py test
+after_success: 
+        - codecov
