@@ -8,4 +8,5 @@ venv/
 .coverage
 paop/introdeeplearning/
 paop/models/old_abstract_model.py
+coverage.xml
 
